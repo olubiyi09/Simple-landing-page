@@ -387,14 +387,14 @@ footer .social-icon img{
     color: var(--grayish-violet);
     border-radius: 5px;
     border-style: none;
-    padding: 12px 0 12px 0;
+    padding: 12px 4px 12px 0;
     margin-right: 0px;
 }
 
 
 .section-2 button{
     margin-top: 20px;
-    padding: 13px 110px;
+    padding: 13px 105px;
     border-radius: 5px;
     border-style: none;
     font-size: 15px;
