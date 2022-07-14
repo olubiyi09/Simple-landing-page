@@ -438,12 +438,26 @@ nav :checked ~ .nav-link{
     bottom: 0;
 }
 
+
+.section-2{
+    position: relative;
+    top: -60px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-violet);
+    border-radius: 5px;
+    padding: 20px 70px;
+    margin: auto;
+    width: 300px;
+    background-image: url(/images/bg-shorten-desktop.svg);
+}
+
 .shorten-tab{
-    font-size: 10px;
+    font-size: 14px;
     color: var(--grayish-violet);
     border-radius: 5px;
     border-style: none;
-    padding: 12px -5px 12px 8px;
+    padding: 12px 0 12px 8px;
     margin-right: 0px;
 }
 
