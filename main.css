@@ -325,7 +325,7 @@ footer .social-icon img{
 
     nav{
         height: 50px;
-        width: 195px;
+        width: 205px;
     }
 
     .left-nav{
@@ -387,7 +387,7 @@ footer .social-icon img{
     color: var(--grayish-violet);
     border-radius: 5px;
     border-style: none;
-    padding: 12px 30px 12px 10px;
+    padding: 12px 10px 12px 10px;
     margin-right: 0px;
 }
 
