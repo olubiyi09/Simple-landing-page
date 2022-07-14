@@ -682,7 +682,7 @@ nav :checked ~ .nav-link{
 
 
     .section-3 {
-        width: 405px;
+        width: 415px;
     }
 
     .section-3 h1{
@@ -696,7 +696,7 @@ nav :checked ~ .nav-link{
 footer{
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 270px;
     gap: 2.8rem;
 }
 
