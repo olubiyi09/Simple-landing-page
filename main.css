@@ -519,7 +519,7 @@ footer .social-icon img{
     footer{
         display: flex;
         flex-direction: column;
-        width: 260px;
+        width: 230px;
         gap: 2.8rem;
     }
     
