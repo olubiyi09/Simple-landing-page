@@ -14,8 +14,122 @@
     margin: 0;
 }
 
+
 nav{
-   display: inline-block;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 25px;
+    height: 50px;
+    background-color: var(--dark-violet);
+}
+
+nav .logo{
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-left: 100px
+}
+
+nav .logo img{
+    width: 128px;
+}
+
+nav .nav-link ul{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    font-size: 14px;
+    padding-top: 7px;
+}
+
+nav .nav-link ul li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+nav .nav-link ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .nav-link ul li a:hover{
+    color: var(--cyan);
+}
+
+
+.login{
+    margin-left: 570px;
+}
+
+.nav-link .active a{
+    background-color: var(--cyan);
+    padding: 10px 22px;
+    margin-left: 7px;
+    margin-top: -10px;
+    border-radius: 20px;
+}
+
+.nav-link .active a:hover{
+    background-color: rgb(20, 189, 189);
+    color: rgb(219, 218, 218);
+    transition: 0.4s ease-in-out;
+}
+
+
+#nav-toggle{
+    display: none;
+}
+
+
+nav .icon-burger {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+nav{
    width: 1149px;
     align-items: center;
     background-color: var(--dark-violet);
@@ -52,6 +166,10 @@ nav{
     color: var(--cyan);
 }
 
+.res-nav{
+    display: none;
+}
+
 .right-nav{
     margin-left: 590px;
 }
@@ -83,12 +201,13 @@ nav{
     background-color: rgb(20, 189, 189);
     color: rgb(219, 218, 218);
     transition: 0.4s ease-in-out;
-}
+} */
 
 .section-1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 75px;
 }
 
 .left-section{
@@ -311,7 +430,19 @@ footer .social-icon img{
 
 
 
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
 
+#check{
+    display: none;
+}
 
 
 
@@ -321,19 +452,142 @@ footer .social-icon img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+        list-style: none;
     }
 
+
+    .login{
+        margin-left: 0px;
+    }
+
+
+    
+nav .logo{
+    margin-left: 30px
+}
+
+nav .logo img{
+    width: 98px;
+}
+
+.nav-link .active a{
+    margin-top: 0px;
+}
+
+#nav-toggle{
+    position: absolute;
+}
+
+
+nav .icon-burger {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-burger .line{
+    cursor: pointer;
+    visibility: visible;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+nav .nav-link{
+    position: fixed;
+    margin-top: -30px;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    background-color: var(--dark-violet);
+    overflow: hidden;
+    transition: all .5s ease-in-out
+}
+
+
+
+
+nav .nav-link ul li{
+    list-style: none;
+    margin-right: 90px;
+}
+
+nav .nav-link ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 5rem;
+}
+
+
+.nav-link .active a{
+    background-color: var(--cyan);
+    line-height: 2;
+    padding: 10px 52px;
+    margin-left: 7px;
+    border-radius: 20px;
+}
+
+nav :checked ~ .nav-link{
+    bottom: 0;
+}
+
+/* 
     nav{
         height: 50px;
         width: 215px;
+        display: none;
     }
 
     .left-nav{
-       display: none;
+        left: -200px;
     }
-    .right-nav{
-       display: none;
+    
+    .left-nav .logo img{
+        width: 90px;
     }
+
+
+   .res-nav{
+    background-color: var(--dark-violet);
+    display: flex;
+    flex-direction: row;
+   }
+
+
+   label{
+    height: 65px;
+   }
+
+   label img{
+    width: 88px;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+.toggle{
+    margin-right: -470px;
+    padding-left: 60px;
+    margin-top: -15px;
+}
+.checkbtn{
+    display: block;
+   }
+
+.res-nav ul li a{
+    margin-left: 30px;
+}
+
+#check:checked ~ ul a{
+    display: block;
+   } */
+
 
   .section-1{
     flex-direction: column-reverse;
